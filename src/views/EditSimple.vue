@@ -100,7 +100,6 @@
 								</template>
 								{{ $t('calendar', 'Delete this occurrence') }}
 							</ActionButton>
-							<NcActionSeparator v-if="isRecurringInstance && canDelete('future')" />
 							<ActionButton v-if="isRecurringInstance && canDelete('future')" @click="deleteAndLeave('future')">
 								<template #icon>
 									<Delete :size="20" decorative />
